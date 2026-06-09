@@ -1,4 +1,5 @@
 import os
+from random import random
 import requests
 import streamlit as st
 from dotenv import load_dotenv
@@ -127,28 +128,40 @@ if "pending_session" not in st.session_state and "final_result" not in st.sessio
     st.markdown("#### 🔍 What do you want to research?")
     topic = st.text_input(
         "Research topic",
+        value=st.session_state.get("topic_input", ""),
         placeholder="e.g. The future of AI agents, Climate change solutions, Quantum computing...",
         label_visibility="collapsed"
     )
 
-    examples = [
-        "The future of AI agents in 2026",
-        "How LangGraph is changing AI development",
-        "Best practices for RAG systems",
-        "Remote work trends in tech industry"
+    all_examples = [
+    "The future of AI agents in 2026",
+    "How LangGraph is changing AI development",
+    "Best practices for RAG systems",
+    "Remote work trends in tech industry",
+    "Impact of quantum computing on cryptography",
+    "How transformer models work",
+    "Climate change solutions and technology",
+    "The rise of multi-agent AI systems",
+    "Best practices for deploying LLMs in production",
+    "How vector databases work",
+    "Future of remote work after 2025",
+    "Advances in robotics and AI",
+    "How to build production RAG pipelines",
+    "Ethics in artificial intelligence",
+    "The future of software engineering with AI",
     ]
+    if "examples" not in st.session_state:
+        st.session_state["examples"] = random.sample(all_examples, 4)
+
+    examples = st.session_state["examples"]
 
     st.markdown("**💡 Example topics:**")
     cols = st.columns(4)
     for i, (col, example) in enumerate(zip(cols, examples)):
         with col:
             if st.button(example, key=f"ex_{i}", use_container_width=True):
-                st.session_state["example_topic"] = example
+                st.session_state["topic_input"] = example
                 st.rerun()
-
-    # Handle example topic selection
-    if "example_topic" in st.session_state:
-        topic = st.session_state.pop("example_topic")
 
     st.markdown("<br>", unsafe_allow_html=True)
     research_btn = st.button("🚀 Start Research", use_container_width=True)
