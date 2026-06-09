@@ -1,5 +1,5 @@
 import os
-from random import random
+import random
 import requests
 import streamlit as st
 from dotenv import load_dotenv
