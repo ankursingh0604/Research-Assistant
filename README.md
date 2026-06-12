@@ -129,4 +129,4 @@ Research-Assistant/
 
 **Ankur Singh** — CS undergrad building RAG systems and AI agents
 
-[GitHub](https://github.com/ankursingh0604)  • [X](https://x.com/ankur_builds)
+[GitHub](https://github.com/ankursingh0604) • [LinkedIn](linkedin.com/in/ankur-singh-ai/) • [X](https://x.com/ankur_builds)
