@@ -77,7 +77,7 @@ Writer Node — synthesizes final structured report
 
 ## Setup
 
-1. Clone the repo
+1. Clone the repository
 ```bash
 git clone https://github.com/ankursingh0604/Research-Assistant
 cd Research-Assistant
