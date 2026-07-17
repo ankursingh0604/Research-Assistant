@@ -118,7 +118,7 @@ Research-Assistant/
 ├── agents/
 │   └── research_agent.py   ← LangGraph multi-agent with Send API + HITL
 ├── api.py                   ← FastAPI two-step endpoints
-├── app.py                   ← Streamlit frontend with random example topics
+├── app.py                   ← Streamlit frontend with random example topics.
 ├── requirements.txt
 └── Dockerfile
 ```
