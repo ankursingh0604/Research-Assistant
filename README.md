@@ -2,7 +2,7 @@
 
 A LangGraph multi-agent system that researches any topic using parallel search agents, critiques the findings, and synthesizes a structured report — all with human review before the final output.
 
-Built with LangGraph's Send API for true parallel execution, Human in the Loop review, and LangSmith tracing.
+Built with LangGraph's Send API for true parallel execution, Human in the Loop review, and LangSmith tracing
 
 🚀 [Live Demo](https://research-assistant-ybkpacxvhyqduzam2mparf.streamlit.app/) &nbsp;|&nbsp; 🔌 [API](https://research-assistant-production-d815.up.railway.app)
 
