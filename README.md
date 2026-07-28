@@ -37,7 +37,7 @@ Critic Node — evaluates quality, scores 1-10
     ↓
 PAUSE ← Human reviews findings + adds instructions
     ↓
-Writer Node — synthesizes final structured report
+Writer Node — synthesizes final structured report. 
 ```
 
 ---
