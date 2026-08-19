@@ -28,7 +28,7 @@ User Topic
     ↓
 Planner Node — breaks into 3 subtopics
     ↓
-Send API — dispatches parallel agents simultaneously
+Send API — dispatches parallel agents simultaneously.
     ├── Search Agent 1 → researches subtopic 1
     ├── Search Agent 2 → researches subtopic 2
     └── Search Agent 3 → researches subtopic 3
